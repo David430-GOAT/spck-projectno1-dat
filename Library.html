@@ -13,213 +13,132 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
+    <style>
+      p {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+
+      /* Loader animation */
+      .loader {
+        border: 6px solid #f3f3f3;
+        border-top: 6px solid #ef4444;
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        animation: spin 1s linear infinite;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
   </head>
-  <style>
-    p {
-      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-        sans-serif;
-    }
-  </style>
   <body class="bg-yellow-300">
-    <header class="text-white w-full bg-yellow-600">
-      <div class="flex justify-center">
-        <button>
-          <a href="main.html"></a
-          ><img
-            src="image_2025-09-07_094524211-removebg-preview.png"
-            alt="Logo.Png"
-            class="w-14 h-10 hover:w-80 hover:h-60 duration-300 hover:cursor-pointer"
-          />
-        </button>
-      </div>
-      <div class="inline-flex">
-        <button class="flex w-24 h-5">
-          <a
-            href="index.html"
-            class="w-24 h-7 bg-green-700 hover:cursor-pointer hover:scale-150 hover:bg-blue-700 duration-300"
-            >Home Page</a
-          >
-        </button>
-        <button class="flex w-24 h-5">
-          <a
-            href="Library.html"
-            class="w-24 h-7 bg-pink-500 hover:cursor-pointer hover:scale-150 hover:bg-blue-700 duration-300"
-            >Library</a
-          >
-        </button>
-        <button class="flex w-24 h-5">
-          <a
-            href="Top.html"
-            class="w-24 h-7 bg-yellow-400 hover:cursor-pointer hover:scale-150 hover:bg-blue-700 duration-300"
-            >Top Hits</a
-          >
-        </button>
-        <button class="flex w-24 h-5">
-          <a
-            href="Search.html"
-            class="w-24 h-7 bg-red-600 hover:cursor-pointer hover:scale-150 hover:bg-blue-700 duration-300"
-            >Search</a
-          >
-        </button>
-      </div>
-    </header>
-    <div class="p-[3%] bg-yellow-500 relative overflow-x-auto w-full">
-      <div
-        class="bg-yellow-200 rounded-3xl flex grid-cols-4 space-x-4 p-4 min-w-max"
-      >
-        <div
-          class="bg-yellow-500 rounded-3xl w-[400px] h-[400px] flex justify-center flex-col items-center"
-        >
-          <div
-            class="bg-black rounded-3xl w-[320px] h-[320px] flex justify-center duration-500 flex-col items-center"
-          >
-            <button>
-              <a
-                href="./music-links/Promise.html"
-                class="w-full h-full hover:cursor-pointer text-white"
-                ><img
-                  src="https://i1.sndcdn.com/artworks-qp28nUMQGaUZ-0-t500x500.jpg"
-                  alt=""
-                  class="w-56 h-56 rounded-3xl space-y-10 hover:scale-110 duration-500"
-                />
-                <p>Promise - Laufey</p>
-                <p class="text-yellow-800">/~/ Bewitched /~/</p></a
-              >
-            </button>
-          </div>
-        </div>
-        <div
-          class="bg-yellow-500 rounded-3xl w-[400px] h-[400px] flex justify-center flex-col items-center"
-        >
-          <div
-            class="bg-black rounded-3xl w-[320px] h-[320px] flex justify-center duration-500 flex-col items-center"
-          >
-            <button>
-              <a
-                href="./music-links/Tough_Luck.html"
-                class="w-full h-full hover:cursor-pointer text-white"
-                ><img
-                  src="https://upload.wikimedia.org/wikipedia/en/2/2b/Laufey_-_A_Matter_of_Time.png"
-                  alt=""
-                  class="w-56 h-56 rounded-3xl space-y-10 hover:scale-110 duration-500"
-                />
-                <p>Tough Luck - Laufey</p>
-                <p class="text-blue-800">/~/ A Matter of Time /~/</p></a
-              >
-            </button>
-          </div>
-        </div>
-        <div
-          class="bg-yellow-500 rounded-3xl w-[400px] h-[400px] flex justify-center flex-col items-center"
-        >
-          <div
-            class="bg-black rounded-3xl w-[320px] h-[320px] flex justify-center duration-500 flex-col items-center"
-          >
-            <button>
-              <a
-                href="./music-links/Lover_Girl.html"
-                class="w-full h-full hover:cursor-pointer text-white"
-                ><img
-                  src="https://upload.wikimedia.org/wikipedia/en/2/2b/Laufey_-_A_Matter_of_Time.png"
-                  alt=""
-                  class="w-56 h-56 rounded-3xl space-y-10 hover:scale-110 duration-500"
-                />
-                <p>Lover Girl - Laufey</p>
-                <p class="text-blue-800">/~/ A Matter of Time /~/</p></a
-              >
-            </button>
-          </div>
-        </div>
-        <div
-          class="bg-yellow-500 rounded-3xl w-[400px] h-[400px] flex justify-center flex-col items-center"
-        >
-          <div
-            class="bg-black rounded-3xl w-[320px] h-[320px] flex justify-center duration-500 flex-col items-center"
-          >
-            <button>
-              <a
-                href="./music-links/Snow_White.html"
-                class="w-full h-full hover:cursor-pointer text-white"
-                ><img
-                  src="https://upload.wikimedia.org/wikipedia/en/2/2b/Laufey_-_A_Matter_of_Time.png"
-                  alt=""
-                  class="w-56 h-56 rounded-3xl space-y-10 hover:scale-110 duration-500"
-                />
-                <p>Snow White - Laufey</p>
-                <p class="text-blue-800">/~/ A Matter of Time /~/</p></a
-              >
-            </button>
-          </div>
-        </div>
-        <div
-          class="bg-yellow-500 rounded-3xl w-[400px] h-[400px] flex justify-center flex-col items-center"
-        >
-          <div
-            class="bg-black rounded-3xl w-[320px] h-[320px] flex justify-center duration-500 flex-col items-center"
-          >
-            <button>
-              <a
-                href="./music-links/Silver_Lining.html"
-                class="w-full h-full hover:cursor-pointer text-white"
-                ><img
-                  src="https://upload.wikimedia.org/wikipedia/en/2/2b/Laufey_-_A_Matter_of_Time.png"
-                  alt=""
-                  class="w-56 h-56 rounded-3xl space-y-10 hover:scale-110 duration-500"
-                />
-                <p>Silver Lining - Laufey</p>
-                <p class="text-blue-800">/~/ A Matter of Time /~/</p></a
-              >
-            </button>
-          </div>
-        </div>
-        <div
-          class="bg-yellow-500 rounded-3xl w-[400px] h-[400px] flex justify-center flex-col items-center"
-        >
-          <div
-            class="bg-black rounded-3xl w-[320px] h-[320px] flex justify-center duration-500 flex-col items-center"
-          >
-            <button>
-              <a
-                href="./music-links/From_The_start.html"
-                class="w-full h-full hover:cursor-pointer text-white"
-                ><img
-                  src="https://i.scdn.co/image/ab67616d0000b27310ee65ae464018c19c8e8ab4"
-                  alt=""
-                  class="w-56 h-56 rounded-3xl space-y-10 hover:scale-110 duration-500"
-                />
-                <p>From The Start - Laufey</p>
-                <p class="text-yellow-700">/~/ Bewitched /~/</p></a
-              >
-            </button>
-          </div>
-        </div>
-        <div
-          class="bg-yellow-500 rounded-3xl w-[400px] h-[400px] flex justify-center flex-col items-center"
-        >
-          <div
-            class="bg-black rounded-3xl w-[320px] h-[320px] flex justify-center duration-500 flex-col items-center"
-          >
-            <button>
-              <a
-                href="./music-links/LYBMHA.html"
-                class="w-full h-full hover:cursor-pointer text-white"
-                ><img
-                  src="https://i.scdn.co/image/ab67616d00001e02afe473a4a47a4e69ab174069"
-                  alt=""
-                  class="w-56 h-56 rounded-3xl space-y-10 hover:scale-110 duration-500"
-                />
-                <p>Let you Break My Heart Again - Laufey</p>
-                <p class="text-yellow-800">/~/ Single /~/</p></a
-              >
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <footer
-      class="text-white w-full space-y-5 bg-yellow-600 flex justify-center h-full"
+    <!-- Loader Screen -->
+    <div
+      id="loader"
+      class="fixed inset-0 bg-yellow-300 flex flex-col justify-center items-center z-50"
     >
-      @Produced by Mai Do Tien Dat
-    </footer>
+      <div class="loader"></div>
+      <p class="mt-4 text-lg font-bold text-yellow-800">Loading...</p>
+    </div>
+
+    <!-- Page Content -->
+    <div id="content" class="hidden">
+      <header class="text-white w-full bg-yellow-600">
+        <div class="flex justify-center">
+          <button>
+            <a href="main.html"></a>
+            <img
+              src="image_2025-09-07_094524211-removebg-preview.png"
+              alt="Logo.Png"
+              class="w-14 h-10 hover:w-80 hover:h-60 duration-300 hover:cursor-pointer"
+            />
+          </button>
+        </div>
+        <div class="inline-flex">
+          <button class="flex w-24 h-5">
+            <a
+              href="index.html"
+              class="w-24 h-7 bg-green-700 hover:cursor-pointer hover:scale-150 hover:bg-blue-700 duration-300"
+              >Home Page</a
+            >
+          </button>
+          <button class="flex w-24 h-5">
+            <a
+              href="Library.html"
+              class="w-24 h-7 bg-pink-500 hover:cursor-pointer hover:scale-150 hover:bg-blue-700 duration-300"
+              >Library</a
+            >
+          </button>
+          <button class="flex w-24 h-5">
+            <a
+              href="Top.html"
+              class="w-24 h-7 bg-yellow-400 hover:cursor-pointer hover:scale-150 hover:bg-blue-700 duration-300"
+              >Top Hits</a
+            >
+          </button>
+          <button class="flex w-24 h-5">
+            <a
+              href="Search.html"
+              class="w-24 h-7 bg-red-600 hover:cursor-pointer hover:scale-150 hover:bg-blue-700 duration-300"
+              >Search</a
+            >
+          </button>
+        </div>
+      </header>
+
+      <div class="p-[3%] bg-yellow-500 relative overflow-x-auto w-full">
+        <div
+          class="bg-yellow-200 rounded-3xl flex grid-cols-4 space-x-4 p-4 min-w-max"
+        >
+          <!-- Example music cards (same as your original code) -->
+          <div
+            class="bg-yellow-500 rounded-3xl w-[400px] h-[400px] flex justify-center flex-col items-center"
+          >
+            <div
+              class="bg-black rounded-3xl w-[320px] h-[320px] flex justify-center duration-500 flex-col items-center"
+            >
+              <button>
+                <a
+                  href="./music-links/Promise.html"
+                  class="w-full h-full hover:cursor-pointer text-white"
+                  ><img
+                    src="https://i1.sndcdn.com/artworks-qp28nUMQGaUZ-0-t500x500.jpg"
+                    alt=""
+                    class="w-56 h-56 rounded-3xl space-y-10 hover:scale-110 duration-500"
+                  />
+                  <p>Promise - Laufey</p>
+                  <p class="text-yellow-800">/~/ Bewitched /~/</p></a
+                >
+              </button>
+            </div>
+          </div>
+          <!-- ... keep the rest of your music blocks here ... -->
+        </div>
+      </div>
+
+      <footer
+        class="text-white w-full space-y-5 bg-yellow-600 flex justify-center h-full"
+      >
+        @Produced by Mai Do Tien Dat
+      </footer>
+    </div>
+
+    <script>
+      // Show loader, then hide after 2 seconds
+      window.addEventListener("load", () => {
+        setTimeout(() => {
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("content").classList.remove("hidden");
+        }, 2000); // adjust delay as needed
+      });
+    </script>
   </body>
 </html>

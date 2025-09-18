@@ -13,19 +13,55 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
+
+    <style>
+      p {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+
+      /* Loader styling */
+      .loader {
+        border: 8px solid #f3f3f3; /* Light grey */
+        border-top: 8px solid #facc15; /* Yellow (tailwind yellow-400) */
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        animation: spin 1s linear infinite;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 9999;
+        background: transparent;
+        transition: opacity 0.5s ease, visibility 0.5s ease;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: translate(-50%, -50%) rotate(0deg);
+        }
+        100% {
+          transform: translate(-50%, -50%) rotate(360deg);
+        }
+      }
+
+      .loader.hidden {
+        opacity: 0;
+        visibility: hidden;
+      }
+    </style>
   </head>
-  <style>
-    p {
-      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-        sans-serif;
-    }
-  </style>
   <body class="bg-yellow-300">
+    <!-- Loader -->
+    <div class="loader"></div>
+
+    <!-- HEADER -->
     <header class="text-white w-full bg-yellow-600">
       <div class="flex justify-center">
         <button>
-          <a href="main.html"></a
-          ><img
+          <a href="main.html"></a>
+          <img
             src="image_2025-09-07_094524211-removebg-preview.png"
             alt="Logo.Png"
             class="w-14 h-10 hover:w-80 hover:h-60 duration-300 hover:cursor-pointer"
@@ -63,10 +99,13 @@
         </button>
       </div>
     </header>
+
+    <!-- MAIN CONTENT -->
     <div class="p-[3%] bg-yellow-500 relative overflow-x-auto w-full">
       <div
         class="bg-yellow-200 rounded-3xl flex grid-cols-4 space-x-4 p-4 min-w-max"
       >
+        <!-- MUSIC CARD 1 -->
         <div
           class="bg-yellow-500 rounded-3xl w-[400px] h-[400px] flex justify-center flex-col items-center"
         >
@@ -216,6 +255,7 @@
         </div>
       </div>
     </div>
+    <!-- FOOTER -->
     <footer
       class="text-white w-full gap-2 py-5 bg-yellow-600 flex flex-col justify-center h-full items-center"
     >
@@ -223,5 +263,12 @@
       <h2>School: SNAC</h2>
       <h2>Date of Birth: 17/04/2012</h2>
     </footer>
+
+    <!-- JS to hide loader -->
+    <script>
+      window.addEventListener("load", () => {
+        document.querySelector(".loader").classList.add("hidden");
+      });
+    </script>
   </body>
 </html>
